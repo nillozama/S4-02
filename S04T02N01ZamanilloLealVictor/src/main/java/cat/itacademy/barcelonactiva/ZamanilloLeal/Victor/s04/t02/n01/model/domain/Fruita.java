@@ -12,11 +12,11 @@ import javax.persistence.Table;
 public class Fruita {
 	
 	@Id
-	@GeneratedValue (strategy=GenerationType.AUTO)
+	@GeneratedValue (strategy=GenerationType.IDENTITY)
 	private int id;
 	@Column (name="nom")
 	private String nom;
-	@Column (name="quantitatQuilos")
+	@Column (name="quantitat_Quilos")
 	private int quantitatQuilos;
 	
 	public int getId() {

@@ -15,7 +15,7 @@ public class FruitaService {
 	@Autowired
 	FruitaRepository fruitaRepository;
 	
-	 public List<Fruita> getAllPersons() {
+	 public List<Fruita> getAllFruits() {
 	        List<Fruita> fruites = new ArrayList<Fruita>();
 	        fruitaRepository.findAll().forEach(f -> fruites.add(f));
 	        return fruites;
