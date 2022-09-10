@@ -19,11 +19,11 @@ import cat.itacademy.barcelonactiva.ZamanilloLeal.Victor.s04.t02.n01.model.servi
 
 @CrossOrigin(origins="http://localhost:8080")
 @RestController
-//@RequestMapping("/model")
+//@RequestMapping("/fruita")
 public class FruitaController {
 	
 	@Autowired
-	FruitaService fruitaService;
+	private FruitaService fruitaService;
 	
 	@GetMapping ("/fruita")
 	public List<Fruita> getAllFruita(){
