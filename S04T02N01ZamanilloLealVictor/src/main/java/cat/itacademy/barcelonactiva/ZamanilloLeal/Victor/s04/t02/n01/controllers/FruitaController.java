@@ -28,7 +28,7 @@ public class FruitaController {
 	@GetMapping ("/fruita")
 	public List<Fruita> getAllFruita(){
 		
-		return fruitaService.getAllPersons();
+		return fruitaService.getAllFruits();
 	}
 
 	@GetMapping ("/fruita/{id}")
