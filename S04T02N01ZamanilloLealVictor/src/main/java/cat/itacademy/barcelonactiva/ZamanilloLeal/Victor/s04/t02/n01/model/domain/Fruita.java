@@ -2,8 +2,8 @@ package cat.itacademy.barcelonactiva.ZamanilloLeal.Victor.s04.t02.n01.model.doma
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,7 +12,8 @@ import javax.persistence.Table;
 public class Fruita {
 	
 	@Id
-	@GeneratedValue (strategy=GenerationType.IDENTITY)
+	//@GeneratedValue (strategy=GenerationType.IDENTITY)
+	@Column (name="id")
 	private int id;
 	@Column (name="nom")
 	private String nom;
@@ -40,7 +41,7 @@ public class Fruita {
 	
 	@Override
 	public String toString() {
-		return "Fruita [id=" + id + ", nom=" + nom + ", quantitatQuilos=" + quantitatQuilos + "]";
+		return "Fruita [id=" + id + ", nom=" + nom + ", quantitat_Quilos=" + quantitatQuilos + "]";
 	}
 	
 	
