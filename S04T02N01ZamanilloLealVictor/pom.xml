@@ -12,7 +12,7 @@
 	<artifactId>S04T02N01ZamanilloLealVictor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>S04T02N01ZamanilloLealVictor</name>
-	<description>Demo project for Spring Boot</description>
+	<description>S04T02N01ZamanilloLealVictor</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -22,32 +22,32 @@ public class FruitaController {
 	@Autowired
 	private FruitaService fruitaService;
 	
-	@GetMapping ("/fruites")
+	@GetMapping ("/fruita/getAll")
 	public List<Fruita> getAllFruita(){
 		
 		return fruitaService.getAllFruits();
 	}
 
-	@GetMapping ("/fruites/{id}")
+	@GetMapping ("fruita/getOne/{id}")
 	public Fruita getFruita(@PathVariable ("id") int id){
 		
 		return fruitaService.getFruitaById(id);
 	}
 	
-	@DeleteMapping ("/fruites/{id}")
+	@DeleteMapping ("/fruita/delete/{id}")
 	public void deleteFruita(@PathVariable ("id") int id) {
 		
 		fruitaService.delete(id);	
 	}
 	
-	@PostMapping ("/fruites")
+	@PostMapping ("/fruita/add")
 	public int addFruita(@RequestBody Fruita fruita) {
 		
 		fruitaService.saveOrUpdate(fruita);
 		return fruita.getId();			
 	}
 	
-	@PutMapping ("/fruites")
+	@PutMapping ("/fruita/update")
 	public int updateFruita(@RequestBody Fruita fruita) {
 		
 		fruitaService.saveOrUpdate(fruita);
